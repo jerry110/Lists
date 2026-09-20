@@ -1,22 +1,68 @@
-# Roku
+! ============================================================
+! Smart TV Advertising and Telemetry Blocklist
+! AdGuard Home syntax
+! ============================================================
 
-```text
-||p.ads.roku.com^
+! ============================================================
+! Roku
+! ============================================================
+
+! Primary advertising, measurement, and telemetry
+||roku.adsmeasurement.com^
 ||ads.roku.com^
+||adservices.roku.com^
+||advertising.roku.com^
+||advertising-v3.roku.com^
+||analytics.roku.com^
+||acr.roku.com^
 ||logs.roku.com^
-||austin.logs.roku.com^
-||cooper.logs.roku.com^
-||liberty.logs.roku.com^
-||midland.logs.roku.com^
-||mobile.logs.roku.com^
-||scribe.logs.roku.com^
+||wwwimg.roku.com^
 
-||bif.sr.roku.com^
+! Roku advertising delivery servers
+||ads.beta.roku.com^
+||ads.staging.roku.com^
+||ads.gcp.roku.com^
+||ads-aka-us-east-1.delivery.roku.com^
+||ads-aka-us-west-2.delivery.roku.com^
+||ads-cf-us-east-1.delivery.roku.com^
+||ads-cf-us-west-2.delivery.roku.com^
+||ads-us-east-1.delivery.roku.com^
+||ads-us-east-2.delivery.roku.com^
+||ads-us-west-2.delivery.roku.com^
+
+! Roku advertising and analytics infrastructure
+||adeng-identity-prod3.bdp.roku.com^
+||adeng-looker-bi-oneview-prod-1001.bdp.roku.com^
+||adeng-looker-dev-1001.bdp.roku.com^
+||adeng-looker-dev-1003.bdp.roku.com^
+||adi-airflow.bdp.roku.com^
+
+! Roku media-service advertising
+||advertising.us-east-1.msc.roku.com^
+||advertising-v3.us-east-1.msc.roku.com^
+||blog-advertising.msc.roku.com^
+||blog-advertising-v2.us-east-1.msc.roku.com^
+
+! Roku web tracking
+||pixel.web.roku.com^
+||pixel.staging.web.roku.com^
+||customer-feedbacks.web.roku.com^
+
+! Roku streaming telemetry
+||logs.sr.roku.com^
 ||traces.sr.roku.com^
 ||track.sr.roku.com^
 ||userdata.sr.roku.com^
-||microsites.sr.roku.com^
+||item-tracking.dev.sr.roku.com^
+||logs.dev.sr.roku.com^
+||traces.dev.sr.roku.com^
+||traces-us-east-1.dev.sr.roku.com^
+||traces-us-west-2.dev.sr.roku.com^
+||userdata.dev.sr.roku.com^
 
+! Additional Roku telemetry endpoints
+||bif.sr.roku.com^
+||microsites.sr.roku.com^
 ||amarillo.sb.roku.com^
 ||amarillo.roku.com^
 ||amoeba.roku.com^
@@ -46,15 +92,17 @@
 ||victoria.roku.com^
 ||windsor.roku.com^
 
+! Roku Advertising and Video Measurement
 ||ravm.tv^
-||display.ravm.tv^
 
-# Samsung Smart TV
+! ============================================================
+! Samsung Smart TV
+! ============================================================
 
+||samsungads.com^
 ||ads.samsungads.com^
 ||config.samsungads.com^
 ||events.samsungads.com^
-||samsungads.com^
 
 ||samsungacr.com^
 ||log-1.samsungacr.com^
@@ -75,7 +123,9 @@
 ||smartclip.com^
 ||smartclip.net^
 
-# LG webOS
+! ============================================================
+! LG webOS
+! ============================================================
 
 ||ad.lgappstv.com^
 ||us.ad.lgsmartad.com^
@@ -87,7 +137,6 @@
 
 ||us.rdx2.lgtvsdp.com^
 ||rdx2.lgtvsdp.com^
-
 ||smartshare.lgtvsdp.com^
 
 ||cdpbeacon.lgtvcommon.com^
@@ -102,7 +151,9 @@
 
 ||yumenetworks.com^
 
-# Vizio / Inscape / ACR
+! ============================================================
+! Vizio / Inscape / Automatic Content Recognition
+! ============================================================
 
 ||inscape.tv^
 ||alphonso.tv^
@@ -119,14 +170,18 @@
 ||tvinteractive.tv^
 ||control-zoo-dtsstage.tvinteractive.tv^
 
-# Samba TV
+! ============================================================
+! Samba TV
+! ============================================================
 
 ||samba.tv^
 ||events.cid.samba.tv^
 ||platform.cid.samba.tv^
 ||pixel.mtrcs.samba.tv^
 
-# Alphonso / LG Ads
+! ============================================================
+! Alphonso / LG Ads
+! ============================================================
 
 ||alphonso.tv^
 ||prov.alphonso.tv^
@@ -139,7 +194,9 @@
 ||villa.alphonso.tv^
 ||web2.alphonso.tv^
 
-# Hisense
+! ============================================================
+! Hisense
+! ============================================================
 
 ||api-gps-em.hismarttv.com^
 ||auth-em.hismarttv.com^
@@ -154,7 +211,9 @@
 ||auth-launcher-na.hismarttv.com^
 ||unified-ter-na.hismarttv.com^
 
-# TCL
+! ============================================================
+! TCL
+! ============================================================
 
 ||ai.tclking.com^
 ||leiniao.com^
@@ -163,14 +222,18 @@
 ||huan.tv^
 ||cedock.com^
 
-# Xiaomi / Mi TV
+! ============================================================
+! Xiaomi / Mi TV
+! ============================================================
 
 ||mitv.tracking.intl.miui.com^
 ||tracking.intl.miui.com^
 ||data.mistat.intl.xiaomi.com^
 ||sdkconfig.ad.intl.xiaomi.com^
 
-# Amazon Fire TV
+! ============================================================
+! Amazon Fire TV
+! ============================================================
 
 ||device-metrics-us.amazon.com^
 ||arcus-uswest.amazon.com^
@@ -181,7 +244,9 @@
 ||mas-ext-eu.amazon.com^
 ||dp-gw-na.amazon.com^
 
-# Google TV / Android TV advertising
+! ============================================================
+! Google TV / Android TV advertising
+! ============================================================
 
 ||doubleclick.net^
 ||static.doubleclick.net^
@@ -191,7 +256,9 @@
 ||googletagservices.com^
 ||google-analytics.com^
 
-# Generic TV advertising / tracking / measurement
+! ============================================================
+! Generic TV advertising, tracking, and measurement
+! ============================================================
 
 ||scorecardresearch.com^
 ||imrworldwide.com^
@@ -206,44 +273,48 @@
 ||ispot.tv^
 ||flashtalking.com^
 ||tvx.adgrx.com^
-```
 
-## Optional aggressive rules
+! ============================================================
+! Optional aggressive rules — DISABLED
+!
+! These rules are comments and are not currently active.
+! Remove the "! " from an individual rule to enable it.
+! Enabling them may break app stores, updates, recommendations,
+! thumbnails, account services, mobile control, or voice features.
+! ============================================================
 
-These can block more telemetry, but they have a higher chance of breaking TV features, app stores, recommendations, firmware updates, thumbnails, or voice features.
+! Roku aggressive rules
+! ||cloudservices.roku.com^
+! ||web.roku.com^
+! ||cti.roku.com^
+! ||voice.roku.com^
+! ||samples.voice.cti.roku.com^
+! ||prod.mobile.roku.com^
+! ||assets.sr.roku.com^
 
-```text
-# Roku
-||cloudservices.roku.com^
-||web.roku.com^
-||cti.roku.com^
-||voice.roku.com^
-||prod.mobile.roku.com^
+! Samsung aggressive rules
+! ||samsungcloudsolution.com^
+! ||samsungcloudsolution.net^
+! ||samsungotn.net^
+! ||samsungrm.net^
+! ||gpm.samsungqbe.com^
+! ||scs.samsungqbe.com^
+! ||osb.samsungqbe.com^
+! ||osb-v2.samsungqbe.com^
+! ||osb-apps-v2.samsungqbe.com^
+! ||gld.push.samsungosp.com^
 
-# Samsung
-||samsungcloudsolution.com^
-||samsungcloudsolution.net^
-||samsungotn.net^
-||samsungrm.net^
-||gpm.samsungqbe.com^
-||scs.samsungqbe.com^
-||osb.samsungqbe.com^
-||osb-v2.samsungqbe.com^
-||osb-apps-v2.samsungqbe.com^
-||gld.push.samsungosp.com^
+! LG aggressive rules
+! ||us.ibs.lgappstv.com^
+! ||ibs.lgappstv.com^
+! ||ibis.lgappstv.com^
+! ||us.lgtvsdp.com^
+! ||lgtvsdp.com^
+! ||lgappstv.com^
+! ||rdl.lgtvcommon.com^
+! ||service.lgtvcommon.com^
 
-# LG
-||us.ibs.lgappstv.com^
-||ibs.lgappstv.com^
-||ibis.lgappstv.com^
-||us.lgtvsdp.com^
-||lgtvsdp.com^
-||lgappstv.com^
-||rdl.lgtvcommon.com^
-||service.lgtvcommon.com^
-
-# Hisense
-||api.us.hismarttv.com^
-||api.eu.hismarttv.com^
-||api.euro.hismarttv.com^
-```
+! Hisense aggressive rules
+! ||api.us.hismarttv.com^
+! ||api.eu.hismarttv.com^
+! ||api.euro.hismarttv.com^
