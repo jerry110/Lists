@@ -318,3 +318,9 @@
 ! ||api.us.hismarttv.com^
 ! ||api.eu.hismarttv.com^
 ! ||api.euro.hismarttv.com^
+
+! ============================================================
+! Pawns.app / IPRoyal - Bandwidth Sharing / Residential Proxy
+! ============================================================
+||pawns.app^
+||iproyal.com^
